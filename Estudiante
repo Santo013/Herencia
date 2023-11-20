@@ -1,0 +1,16 @@
+package Logic;
+public class Estudiante extends Persona	{
+	private String semestre;
+public Estudiante(String nom, int ced, String dir,String sem) {
+		super(nom, ced, dir);
+		this.semestre =sem;
+	}
+@Override
+public String toString() {
+	/*Llamar un metodo desde otro método se llama "recursividad"
+	 */
+	return "Estudiante ["+super.toString()+"semestre=" + semestre + "]";
+}
+
+
+}
