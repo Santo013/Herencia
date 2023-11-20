@@ -1,0 +1,13 @@
+package UI;
+import Logic.*;
+public class Main {
+public static void main(String args[])	{
+	Persona per = new Persona("Juan", 1023214353, "Cra 11# 23");
+	System.out.println(per.toString());
+	Estudiante est = new Estudiante("Ivan", 23112431,"Cra 45# No8", "Semestre 2");
+	System.out.println(est.toString());
+	System.out.println(est.toString().toString());
+	Egresado egr = new Egresado("Ivan", 23112431,"Cra 45# No8", "Semestre 2","2000");
+	System.out.println(egr.toString());
+}
+}
