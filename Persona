@@ -1,0 +1,32 @@
+package Logic;
+public class Persona {
+private String nombre,direccion;
+private int cedula;
+public Persona(String nom,int ced,String dir) {
+	setNombre(nom);
+	setDireccion(dir);
+	setCedula(ced);
+}
+public String getDireccion() {
+	return direccion;
+}
+public void setDireccion(String direccion) {
+	this.direccion = direccion;
+}
+public int getCedula() {
+	return cedula;
+}
+public void setCedula(int cedula) {
+	this.cedula = cedula;
+}
+public String getNombre() {
+	return nombre;
+}
+public void setNombre(String nombre) {
+	this.nombre = nombre;
+}
+@Override
+public String toString() {
+	return "Persona [nombre=" + nombre + ", direccion=" + direccion + ", cedula=" + cedula + "]";
+}
+}
