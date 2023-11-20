@@ -1,0 +1,14 @@
+package Logic;
+public class Egresado extends Estudiante {
+public String annoegreso;
+public Egresado(String nom, int ced, String dir, String sem,String ang) {
+		super(nom, ced, dir, sem);
+		this.annoegreso = ang;
+	}
+@Override
+public String toString() {
+	return "Egresado ["+super.toString()+"Ingreso=" + annoegreso + "]";
+}
+	
+
+}
